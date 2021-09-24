@@ -1,0 +1,19 @@
+.product{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+.product-name{
+    color:blue;
+    font-weight: 400;
+}
+.parches{
+    background-color: goldenrod;
+    width: 150px;
+    height: 25px;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.icon-color{
+    color:gold;
+}

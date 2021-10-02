@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { addToDb, getStoredCart } from '../../../utilities/fakedb';
 import Cart from '../../Cart/Cart';
 import Product from '../../Product/Product';
+import { Link } from 'react-router-dom'
 import './Shop.css'
 
 const Shop = () => {
@@ -74,7 +75,11 @@ const Shop = () => {
                     }
                 </div>
                 <div className="cart-contsiner">
-                    <Cart cart={cart}></Cart>
+                    <Cart cart={cart}>
+                        <Link to="/review">
+                            <button className="parches">Review your order</button>
+                        </Link>
+                    </Cart>
                 </div>
             </div>
         </div>
